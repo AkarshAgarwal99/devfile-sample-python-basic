@@ -5,10 +5,10 @@ EXPOSE 8081/tcp
 ENV FLASK_PORT=8081
 
 # Set the working directory in the container
-WORKDIR /workspaces
+WORKDIR /workspaces/devfile-sample-python-basic
 
 # Copy the dependencies file to the working directory
-COPY devfile-sample-python-basic/requirements.txt .
+COPY requirements.txt .
 
 # Install any dependencies
 RUN pip install -r requirements.txt
