@@ -8,7 +8,7 @@ ENV FLASK_PORT=8081
 WORKDIR /workspaces
 
 # Copy the dependencies file to the working directory
-COPY ../requirements.txt .
+COPY devfile-sample-python-basic/requirements.txt .
 
 # Install any dependencies
 RUN pip install -r requirements.txt
