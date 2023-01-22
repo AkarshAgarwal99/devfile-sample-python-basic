@@ -11,10 +11,10 @@ WORKDIR /projects
 COPY requirements.txt .
 
 # Install any dependencies
-RUN pip install -r requirements.txt
+RUN pip install -r ../requirements.txt
 
 # Copy the content of the local src directory to the working directory
-COPY . .
+COPY /workspaces/devfile-sample-python-basic .
 
 # Specify the command to run on container start
 CMD [ "python", "./app.py" ]
