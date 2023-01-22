@@ -8,6 +8,8 @@ ENV FLASK_PORT=8081
 WORKDIR /workspaces/devfile-sample-python-basic
 
 # Install any dependencies
+RUN pwd
+
 RUN pip install -r requirements.txt
 
 # Copy the content of the local src directory to the working directory
