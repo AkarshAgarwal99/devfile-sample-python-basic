@@ -5,7 +5,7 @@ EXPOSE 8081/tcp
 ENV FLASK_PORT=8081
 
 # Set the working directory in the container
-WORKDIR /projects
+WORKDIR /workspaces
 
 # Copy the dependencies file to the working directory
 COPY ../requirements.txt .
